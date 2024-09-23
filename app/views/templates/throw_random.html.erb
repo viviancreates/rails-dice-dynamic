@@ -3,4 +3,10 @@
 <ul>
   <li><%= @random_dice %></li>
   <li><%= @random_sides %></li>
+
+  <% @rolls.each do |a_roll| %>
+  <li>
+    <%= a_roll %>
+  </li>
+  
 </ul>
