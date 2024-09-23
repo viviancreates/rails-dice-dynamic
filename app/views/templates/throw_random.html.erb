@@ -1,12 +1,9 @@
-<h1><%= @random_dice %>d<%= @random_sides %></h1>
+<h1><%= @number_of_dice %>d<%= @random_sides %></h1>
 
 <ul>
-  <li><%= @random_dice %></li>
-  <li><%= @random_sides %></li>
-
   <% @rolls.each do |a_roll| %>
-  <li>
+    <li>
     <%= a_roll %>
-  </li>
-  
+    </li>
+  <% end %>
 </ul>
